@@ -17,6 +17,7 @@
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
+    --font-brand: 'Cinzel', serif;  /* Stylish display font for "Kartik Villa" */
     
     /* Spacing */
     --section-padding: 100px 0;
@@ -158,11 +159,11 @@ ul {
 }
 
 .nav-logo {
-    font-family: var(--font-heading);
+    font-family: var(--font-brand);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--primary-color);
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 .nav-menu {
@@ -261,12 +262,12 @@ ul {
 }
 
 .hero-title {
-    font-family: var(--font-heading);
+    font-family: var(--font-brand);
     font-size: 4.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    letter-spacing: 3px;
+    letter-spacing: 6px;
 }
 
 .hero-subtitle {
@@ -918,8 +919,10 @@ ul {
 }
 
 .footer-title {
-    font-family: var(--font-heading);
+    font-family: var(--font-brand);
     font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
     color: var(--primary-color);
     margin-bottom: 15px;
 }
