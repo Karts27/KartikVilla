@@ -1,0 +1,27 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# Temporary Files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Personal Notes (optional)
+notes.txt
+TODO.txt

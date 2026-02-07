@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- EDIT: Update these meta tags with your property details -->
+    <title>Kartik Villa - Peaceful Himalayan Retreat in Ranikhet, Uttarakhand</title>
+    <meta name="description" content="Welcome to Kartik Villa, a serene 4-bedroom Himalayan home in Ranikhet. Surrounded by pine forests, valley views, and perfect for vacations, work-from-mountains, and family retreats.">
+    
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Kartik Villa - Himalayan Retreat in Ranikhet">
+    <meta property="og:description" content="A peaceful 4-bedroom villa in Ranikhet surrounded by pine forests and breathtaking Himalayan views.">
+    <meta property="og:image" content="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.07.jpeg">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon - EDIT: Add your own favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body>
+    
+    <!-- ============================================ -->
+    <!-- CONFIGURATION SECTION - EDIT THESE VALUES -->
+    <!-- ============================================ -->
+    <script>
+        // EDIT: Update these values with your property details
+        const PROPERTY_CONFIG = {
+            name: "Kartik Villa",
+            whatsapp: "917838316633", // Your WhatsApp number with country code (no + or spaces)
+            email: "kkgroup285@gmail.com", // Your booking email
+            airbnbLink: "https://www.airbnb.co.in/rooms/1532021932382285134",
+            
+            // Property stats
+            bedrooms: 4,
+            bathrooms: 4,
+            maxGuests: 8,
+            
+            // Location
+            location: "Ranikhet, Uttarakhand", // EDIT: Your property location
+            
+            // Social media (optional)
+            instagram: "", // EDIT: Add your Instagram handle if you have one
+            facebook: ""   // EDIT: Add your Facebook page if you have one
+        };
+    </script>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Kartik Villa</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Book Now</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <!-- Hero images showing the best views of Kartik Villa -->
+            <div class="hero-slide active" style="background-image: url('./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.07.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('./images/Kartik Villa/KK Vila/WhatsApp Image 2025-12-23 at 21.36.09 (1).jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.12 (1).jpeg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Kartik Villa</h1>
+            <p class="hero-subtitle">A Peaceful Himalayan Retreat in Ranikhet</p>
+            <a href="#contact" class="btn btn-primary">Book Your Stay</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Welcome to Kartik Villa</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <!-- EDIT: Replace this description with your property description -->
+            <div class="about-content">
+                <p class="about-text lead">
+                    Welcome to Kartik Villa, a peaceful and beautifully designed Himalayan home located inside the serene Queen Meadows Resort, Ranikhet, Uttarakhand.
+                </p>
+                <p class="about-text">
+                    Surrounded by pine forests, breathtaking valley views, and the calm energy of Devbhoomi, this villa is perfect for vacations, long stays, work-from-mountains, and slow-living retreats.
+                </p>
+                <p class="about-text">
+                    Whether you are looking for silence, fresh mountain air, or a refreshing break with family, Kartik Villa offers comfort, privacy, and a soulful environment.
+                </p>
+            </div>
+
+            <div class="property-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">🛏️</div>
+                    <div class="stat-number" id="stat-bedrooms">3</div>
+                    <div class="stat-label">Bedrooms</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🚿</div>
+                    <div class="stat-number" id="stat-bathrooms">2</div>
+                    <div class="stat-label">Bathrooms</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" id="stat-guests">6</div>
+                    <div class="stat-label">Max Guests</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">5.0</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">Explore our beautiful spaces</p>
+            </div>
+
+            <!-- Villa Exterior -->
+            <h3 class="gallery-section-title">🏡 Villa Exterior</h3>
+            <div class="gallery-grid">
+                <!-- Villa Exterior & General -->
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/KK Vila/WhatsApp Image 2025-12-23 at 21.36.06 (1).jpeg" alt="Kartik Villa Exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/KK Vila/WhatsApp Image 2025-12-23 at 21.36.08 (1).jpeg" alt="Villa Building" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/KK Vila/WhatsApp Image 2025-12-23 at 21.36.12.jpeg" alt="Villa Architecture" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/KK Vila/WhatsApp Image 2025-12-23 at 21.36.14 (1).jpeg" alt="Villa Entrance" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patio & Outdoor Areas -->
+            <h3 class="gallery-section-title">🌳 Patio & Outdoor Areas</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.06 (2).jpeg" alt="Outdoor Patio Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.07 (1).jpeg" alt="Patio with Mountain Views" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.09 (2).jpeg" alt="Outdoor Seating" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.10 (2).jpeg" alt="Patio View" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.11 (2).jpeg" alt="Outdoor Dining Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.13 (1).jpeg" alt="Patio Seating" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Patio/WhatsApp Image 2025-12-23 at 21.36.17.jpeg" alt="Outdoor Space" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Living Room / Hall -->
+            <h3 class="gallery-section-title">🛋️ Living Areas</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Hall/WhatsApp Image 2025-12-23 at 21.36.06 (3).jpeg" alt="Living Room" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Hall/WhatsApp Image 2025-12-23 at 21.36.13.jpeg" alt="Hall Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Hall/WhatsApp Image 2025-12-23 at 21.36.15 (2).jpeg" alt="Common Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Hall/WhatsApp Image 2025-12-23 at 21.36.17 (1).jpeg" alt="Living Space" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- Bedrooms -->
+            <h3 class="gallery-section-title">🛏️ Bedrooms</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Rooms/WhatsApp Image 2025-12-23 at 21.36.05.jpeg" alt="Bedroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Rooms/WhatsApp Image 2025-12-23 at 21.36.10 (1).jpeg" alt="Guest Bedroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Rooms/WhatsApp Image 2025-12-23 at 21.36.11.jpeg" alt="Master Bedroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Rooms/WhatsApp Image 2025-12-23 at 21.36.16 (1).jpeg" alt="Bedroom with View" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- Bathrooms -->
+            <h3 class="gallery-section-title">🚿 Bathrooms</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Bathroom/WhatsApp Image 2025-12-23 at 21.36.09.jpeg" alt="Bathroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Bathroom/WhatsApp Image 2025-12-23 at 21.36.19.jpeg" alt="Modern Bathroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Kartik Villa/Bathroom/WhatsApp Image 2025-12-23 at 21.36.20 (1).jpeg" alt="Bathroom Facilities" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Amenities</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">Everything you need for a perfect stay</p>
+            </div>
+
+            <!-- EDIT: Add, remove, or modify amenities as per your property -->
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">📶</div>
+                    <h3 class="amenity-title">High-Speed WiFi</h3>
+                    <p class="amenity-description">Stay connected with reliable internet</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🍳</div>
+                    <h3 class="amenity-title">Full Kitchen</h3>
+                    <p class="amenity-description">Cook your own meals with all essentials</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🔥</div>
+                    <h3 class="amenity-title">Heating</h3>
+                    <p class="amenity-description">Stay warm in the mountains</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🚿</div>
+                    <h3 class="amenity-title">Hot Water</h3>
+                    <p class="amenity-description">24/7 hot water in all bathrooms</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🎵</div>
+                    <h3 class="amenity-title">Sound System</h3>
+                    <p class="amenity-description">Bluetooth and aux connectivity</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🌲</div>
+                    <h3 class="amenity-title">Pine Forest Setting</h3>
+                    <p class="amenity-description">Surrounded by serene pine trees</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🏔️</div>
+                    <h3 class="amenity-title">Valley Views</h3>
+                    <p class="amenity-description">Breathtaking Himalayan vistas</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🍽️</div>
+                    <h3 class="amenity-title">Outdoor Dining</h3>
+                    <p class="amenity-description">Dine amidst nature</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🔐</div>
+                    <h3 class="amenity-title">Security Cameras</h3>
+                    <p class="amenity-description">Exterior monitoring for safety</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🩹</div>
+                    <h3 class="amenity-title">First Aid Kit</h3>
+                    <p class="amenity-description">Emergency medical supplies</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🧳</div>
+                    <h3 class="amenity-title">Luggage Assistance</h3>
+                    <p class="amenity-description">Staff help with all bags</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">🐕</div>
+                    <h3 class="amenity-title">Pet Friendly</h3>
+                    <p class="amenity-description">Pets are welcome</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Location & Nearby Attractions</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="location-content">
+                <div class="location-info">
+                    <!-- EDIT: Update location details -->
+                    <h3 class="location-subtitle">A Himalayan Retreat</h3>
+                    <p class="location-text">
+                        Kartik Villa is located inside the serene Queen Meadows Resort in Ranikhet, Uttarakhand. 
+                        Accessible via a scenic 600-metre hike through tall pine trees, the pathway is 
+                        well-laid with comfortable resting points along the way.
+                    </p>
+                    <p class="location-text">
+                        Experience the peaceful energy of Devbhoomi (Land of Gods), surrounded by pristine pine 
+                        forests and breathtaking valley views. Perfect for work-from-mountains, family vacations, 
+                        and slow-living retreats.
+                    </p>
+                    
+                    <!-- EDIT: Add your nearby attractions -->
+                    <div class="nearby-attractions">
+                        <h4>Experience:</h4>
+                        <ul class="attractions-list">
+                            <li>🌲 Pine Forest Hike - 600 metres</li>
+                            <li>🏔️ Himalayan Valley Views</li>
+                            <li>🏞️ Queen Meadows Resort Setting</li>
+                            <li>🧘 Perfect for Meditation & Yoga</li>
+                            <li>💼 Work from Mountains Setup</li>
+                            <li>🌄 Sunrise & Sunset Views</li>
+                        </ul>
+                        <div style="margin-top: 20px;">
+                            <a href="https://maps.app.goo.gl/fSUjDWyoVG7ZtxAU7" target="_blank" class="btn btn-primary" style="font-size: 0.9rem; padding: 10px 25px;">
+                                📍 Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Location -->
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.123456789!2d79.6!3d29.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDM2JzAwLjAiTiA3OcKwMzYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <!-- Direct Google Maps link: https://maps.app.goo.gl/fSUjDWyoVG7ZtxAU7 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Guest Reviews</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">What our guests say about their stay</p>
+            </div>
+
+            <div class="reviews-carousel">
+                <!-- EDIT: Replace these with your actual Airbnb reviews -->
+                
+                <!-- Review 1 -->
+                <div class="review-card active">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "An absolutely magical stay! The 600m hike through the pine forest sets the perfect tone. 
+                        Kartik Villa is beautifully maintained, spacious, and the views are breathtaking. Perfect for 
+                        families and the staff's luggage assistance made everything so easy. Highly recommend for 
+                        anyone looking for a peaceful mountain retreat!"
+                    </p>
+                    <div class="review-author">
+                        <p class="review-date">December 2025</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Kartik Villa exceeded all expectations! The location in Ranikhet is stunning, surrounded by 
+                        nature and pine forests. We worked remotely from here for two weeks and the WiFi was excellent. 
+                        The villa has everything you need - modern amenities with a mountain soul. The outdoor patio 
+                        became our favorite spot for morning chai!"
+                    </p>
+                    <div class="review-author">
+                        <p class="review-date">November 2025</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Great stay at Kartik Villa! The 4 bedrooms were spacious and comfortable for our family. 
+                        The forest hike to reach the villa is beautiful but can be a bit challenging with heavy luggage - 
+                        thankfully the staff helped us. The kitchen was well-equipped and the valley views are amazing. 
+                        Would recommend bringing warm clothes as it gets quite cold in the evenings."
+                    </p>
+                    <div class="review-author">
+                        <p class="review-date">October 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" aria-label="Previous review">&#10094;</button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next review">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Booking Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Stay</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">Ready to experience luxury? Get in touch with us</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Why Book Kartik Villa?</h3>
+                    <ul class="benefits-list">
+                        <li>✓ Peaceful Himalayan retreat</li>
+                        <li>✓ Surrounded by pine forests</li>
+                        <li>✓ Perfect for families & work-from-mountains</li>
+                        <li>✓ Luggage assistance provided</li>
+                        <li>✓ Pet-friendly accommodation</li>
+                        <li>✓ 4 bedrooms, 4 bathrooms</li>
+                    </ul>
+                </div>
+
+                <div class="contact-buttons">
+                    <!-- WhatsApp Button -->
+                    <a href="#" id="whatsapp-btn" class="contact-btn whatsapp-btn" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span>Book via WhatsApp</span>
+                    </a>
+
+                    <!-- Email Button -->
+                    <a href="#" id="email-btn" class="contact-btn email-btn">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>Book via Email</span>
+                    </a>
+
+                    <!-- Airbnb Link -->
+                    <a href="#" id="airbnb-btn" class="contact-btn airbnb-btn" target="_blank">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/>
+                        </svg>
+                        <span>View on Airbnb</span>
+                    </a>
+                </div>
+
+                <div class="contact-note">
+                    <p>
+                        <strong>Important Note:</strong> Kartik Villa is accessible via a scenic 600-metre hike 
+                        through beautiful pine trees. Our staff is always available to assist with all luggage. 
+                        Please include your check-in/check-out dates and number of guests in your message.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Kartik Villa</h3>
+                    <p class="footer-text">Your luxury vacation rental destination</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Book Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact</h4>
+                    <ul class="footer-contact">
+                        <li id="footer-location">📍 Ranikhet, Uttarakhand</li>
+                        <li id="footer-email">✉️ kkgroup285@gmail.com</li>
+                        <li id="footer-phone">📱 +91 78383 16633</li>
+                    </ul>
+                </div>
+                
+                <!-- EDIT: Add your social media links if you have them -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kartik Villa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
